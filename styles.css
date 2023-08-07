@@ -45,6 +45,7 @@ body{
     height: 30px;
     background: rgb(59, 132, 228);
     color: azure;
+    display: flex;
 }
 .content{
     display: flex;
@@ -102,6 +103,13 @@ body{
 .indivudual-cards h3{
     margin-left: 20px;
 }
+.card-3{
+    background: rgb(88, 88, 206);
+    color: white;
+}
+.card-3 p{
+    color: white;
+}
 .products{
     height: 50vh;
     display: flex;
@@ -129,13 +137,18 @@ body{
     
 }
 .persons h1{
-    padding: 40px;
+    padding: 25px;
     /* color: white; */
+}
+.persons p{
+    font-size: 20px;
+    margin: auto 5%;
 }
 .profile-cards{
     display: flex;
     justify-content: center;
     gap: 5%;
+    margin: 20px;
     /* margin:10%; */
 }
 .profiles{
@@ -245,7 +258,9 @@ body{
     background: rgb(59, 132, 228);
     border: none;
     border-radius: 2px;
-    padding: 5px;
+    /* padding: 5px; */
+    margin: auto auto 20px auto;
+
     }
 .globe{
  height: 95vh;
@@ -327,4 +342,96 @@ form button {
 }
 .f{
     height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+@media(max-width: 390px){
+    .menu{
+        display: none;
+    }
+    .price-cards{
+        flex-direction: column;
+        
+        
+    }
+    .profile-cards{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        height: auto;
+        gap: 10px;
+        margin:5% 20%;
+    }
+    .persons{
+        height: auto;
+        margin: 2%;
+    }
+    .profiles{
+        width: 90%;
+    }
+    .vectors{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .login-signup{
+        display: none;
+    }
+    .cards-products{
+        flex-direction: column;
+        height: auto;
+        justify-content: space-around;
+        gap: 10px;
+    }
+    .cards-price{
+        margin-top: 3%;
+    }
+    .indivudual-cards{
+        width: 90%;
+        margin: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* margin-top: 70px; */
+    }
+    .products{
+        flex-direction: column;
+        height: auto;
+        justify-content: space-around;
+
+    }
+    .sub-elements{
+        flex-direction: column;
+        width: 100%;
+    }
+    .inputs{
+        width: 100%;
+    }
+    .inputs button{
+        width: 30%;
+        margin-left:-1%;
+    }
+    .appointment{
+        width: 100%;
+        margin:auto 1% ;
+    }
+    .globe img{
+        width: 90%;
+        /* height:200px ; */
+    }
+    .contactus{
+        flex-direction: column;
+    }
+    .globe{
+        display: flex;
+        flex-direction: column-reverse;
+        /* gap: 20px; */
+
+    }
+   
 }
